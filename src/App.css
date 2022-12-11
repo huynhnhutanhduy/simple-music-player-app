@@ -1,0 +1,81 @@
+:root {
+  --player-color: #202040;
+  --progress-color: #3c3447;
+  --white-color: #fff;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+body {
+  line-height: 1.5;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.player-control {
+  background-color: var(--player-color) !important;
+  height: 105px;
+}
+
+.rhap_time {
+  color: var(--white-color) !important;
+}
+.rhap_progress-bar {
+  height: 8px !important;
+  border-radius: 10px !important;
+}
+.rhap_progress-filled {
+  background-color: var(--white-color) !important;
+  border-radius: 10px !important;
+}
+.rhap_download-progress {
+  background-color: var(--progress-color) !important;
+  border-radius: 10px !important;
+}
+.rhap_progress-bar > .rhap_progress-indicator {
+  display: none;
+  top: -5px !important;
+  width: 18px !important;
+  height: 18px !important;
+  transition: display 0.2s linear !important;
+}
+.rhap_progress-bar:hover > .rhap_progress-indicator,
+.rhap_volume-indicator {
+  box-shadow: none !important;
+  background: var(--white-color) !important;
+  display: block;
+}
+.rhap_button-clear {
+  color: var(--white-color) !important;
+}
+.rhap_volume-bar {
+  background: var(--progress-color) !important;
+}
