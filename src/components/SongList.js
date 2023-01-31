@@ -12,14 +12,14 @@ const SongList = () => {
     setIdSong(song.id);
   }, [song]);
   return (
-    <div className="col-span-2 overflow-y-scroll bg-song-list">
+    <div className="lg:col-span-2 overflow-y-scroll bg-song-list">
       <table className="table-auto w-full">
         <thead className="text-white h-[50px] font-bold">
           <tr>
             <th className="w-[10%] text-center">#</th>
-            <th className="text-left">Title</th>
-            <th className="w-[20%] text-left">Author</th>
-            <th className="w-[10%] text-center">
+            <th className="w-[30%] text-left">Author</th>
+            <th className="w-[50%] text-left">Title</th>
+            <th className="w-[10%] text-center hide">
               <i className="fa-solid fa-download"></i>
             </th>
           </tr>
@@ -34,9 +34,9 @@ const SongList = () => {
               onClick={() => handlePlay(item.id)}
             >
               <td className="text-center">{item.id + 1}</td>
+              <td className="text-left break-all">{item.author}</td>
               <td className="text-left">{item.name}</td>
-              <td className="text-left">{item.author}</td>
-              <td className="text-center">
+              <td className="text-center hide">
                 <a href="url">
                   <i className="fa-solid fa-download"></i>
                 </a>

@@ -79,3 +79,9 @@ h6 {
 .rhap_volume-bar {
   background: var(--progress-color) !important;
 }
+
+@media screen and (max-width: 767px) {
+  .hide {
+    display: none;
+  }
+}

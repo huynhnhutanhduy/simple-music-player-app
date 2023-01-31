@@ -17,7 +17,7 @@ function App() {
   return (
     <Music.Provider value={{ data, song, handleSong }}>
       <div>
-        <div className="grid grid-cols-3 h-screen-content">
+        <div className="grid lg:grid-cols-3 h-screen-content">
           <Song />
           <SongList />
         </div>
