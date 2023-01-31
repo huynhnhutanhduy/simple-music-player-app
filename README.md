@@ -6,7 +6,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This is a project about a simple music player website and does not have responsive design yet.
+This is a project about a simple music player website/app.
 
 ## Available Scripts
 
